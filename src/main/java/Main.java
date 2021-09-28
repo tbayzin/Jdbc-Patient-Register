@@ -1,5 +1,5 @@
 import connection.DatabaseManager;
-import service.PatientService;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,12 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        Device RoentgenMach = FactoryGenerator.getFactory(FactoryType.XRAYFACTORY).getGadget(DeviceType.ROENTGENMACH);
+        System.out.println(RoentgenMach.getDetails());
+    }
+    }
 
+        /*
         DatabaseManager jdbc = DatabaseManager.getInstance();
 
 
@@ -36,3 +41,4 @@ public class Main {
 
     }
 }
+*/

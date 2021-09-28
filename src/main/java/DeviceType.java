@@ -1,0 +1,6 @@
+public enum DeviceType {
+    BRAINSHOCKMACH,
+    HEARTSHOCKMACH,
+    ROENTGENMACH,
+    TOMOGRAPHYMACH;
+}
