@@ -5,9 +5,9 @@ public class XrayFactory extends AbstractDeviceFactory {
     Device getGadget(DeviceType deviceType) {
         switch (deviceType) {
             case TOMOGRAPHYMACH:
-                return new BrainShockMach("16gb",50000);
+                return new TomographyMach("16gb",50000,50);
             case ROENTGENMACH:
-                return new HeartShockMach("32gb",75000);
+                return new RoentgenMach("32gb",75000,70);
         }
         return null;
     }

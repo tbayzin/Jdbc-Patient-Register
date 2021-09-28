@@ -7,8 +7,13 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Device RoentgenMach = FactoryGenerator.getFactory(FactoryType.XRAYFACTORY).getGadget(DeviceType.ROENTGENMACH);
-        System.out.println(RoentgenMach.getDetails());
+        Device TomographyMach = FactoryGenerator.getFactory(FactoryType.XRAYFACTORY).getGadget(DeviceType.TOMOGRAPHYMACH);
+        System.out.println(TomographyMach.getDetails());
+
+        AbstractDeviceFactory shockFactory = FactoryGenerator.getFactory(FactoryType.SHOCKFACTORY);
+        Device heartShockFactory = shockFactory.getGadget(DeviceType.HEARTSHOCKMACH);
+        System.out.println(heartShockFactory.getDetails());
+
     }
     }
 

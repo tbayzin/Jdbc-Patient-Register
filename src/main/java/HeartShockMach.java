@@ -17,7 +17,7 @@ public class HeartShockMach extends Device{
 
     @Override
     public String toString() {
-        return "HeartShockMach{" +
+        return "Heart ShockMach{" +
                 "ram='" + ram + '\'' +
                 ", price=" + price +
                 '}';

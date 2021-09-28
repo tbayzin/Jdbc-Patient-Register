@@ -15,17 +15,16 @@ public class RoentgenMach extends Device {
 
     @Override
     public String getDetails() {
-        return  "Röntgen makinasının rami: " + this.ram + " fiyatı:  " + this.price + " ve ağırlığı "
+        return  "Rontgen makinasının rami: " + this.ram + " fiyatı:  " + this.price + " ve ağırlığı "
                 + this.weight + " kilogramdır";
     }
 
 
     @Override
     public String toString() {
-        return "RoentgenMach{" +
+        return "Roentgen Mach{" +
                 "ram='" + ram + '\'' +
                 ", price=" + price +
-                ", weight=" + weight +
                 '}';
     }
 }
