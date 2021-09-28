@@ -12,7 +12,7 @@ public class HeartShockMach extends Device{
 
     @Override
     public String getDetails() {
-        return  "Kalp şoku makinasının rami: " + this.ram + " ve fiyatı:  " + this.price + "dır";
+        return  "Kalp şoku makinasının rami: " + this.ram + " ve fiyatı: " + this.price + "$ dır";
     }
 
     @Override
